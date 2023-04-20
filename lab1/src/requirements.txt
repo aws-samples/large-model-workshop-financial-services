@@ -1,0 +1,3 @@
+datasets<2.11
+setfit
+sagemaker>=2.130.0

@@ -1,0 +1,31 @@
+name: "t5-summarization"
+backend: "python"
+max_batch_size: 16
+
+input [
+  {
+    name: "INPUT0"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+    
+  }
+]
+output [
+ {
+    name: "SUMMARY"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+  }
+]
+
+instance_group [
+    { 
+        count:1
+        kind: KIND_GPU 
+    }
+]
+
+parameters: {
+  key: "EXECUTION_ENV_PATH",
+  value: {string_value: "$$TRITON_MODEL_DIRECTORY/mme_env.tar.gz"}
+}
