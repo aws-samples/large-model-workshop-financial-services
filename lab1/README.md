@@ -29,7 +29,7 @@ Confirm that your notebook shows the instance and kernel selection that is consi
 
 ![KernelSelect](../assets/images/lab1/notebook_picture.JPG)
 
-You are now ready to run the notebook. The notebook allows you to run code snippets interactively by either clicking the play icon in the toolbar or pressing `Shit+Enter` on your keyboard.  
+You are now ready to run the notebook. The notebook allows you to run code snippets interactively by either clicking the play icon in the toolbar or pressing `Shift+Enter` on your keyboard.  
 
 ## Conclusion
 In this lab we saw how we can train a model using SageMaker Training and deploy it to a SageMaker Endpoint for inference. We also saw how we can use SageMaker Experiments to track the experiment.
